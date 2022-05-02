@@ -17,6 +17,7 @@
 .header {
   width: 100%;
   background-image: url('../public/images/bg-header-desktop.svg');
-  height: 20vh;
+  height: 11vh;
+  background-repeat: repeat-x;
   background-color: hsl(180, 29%, 50%);
 }
