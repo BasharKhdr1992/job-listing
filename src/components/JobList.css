@@ -1,0 +1,29 @@
+.job-list {
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+}
+
+.tag {
+  border-radius: 24px;
+  padding: 10px;
+  margin-left: 1em;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.featured {
+  background-color: hsl(180, 14%, 20%);
+  color: hsl(180, 31%, 95%);
+}
+
+.new {
+  background-color: hsl(180, 29%, 50%);
+  color: hsl(180, 31%, 95%);
+}
+
+@media screen and (max-width: 900px) {
+  .job-list {
+    width: 90%;
+  }
+}

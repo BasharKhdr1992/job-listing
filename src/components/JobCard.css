@@ -1,0 +1,92 @@
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2em;
+  background-color: hsl(0, 0%, 98%);
+  border-radius: 12px;
+  margin-bottom: 2em;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2), 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.card-left {
+  display: flex;
+}
+
+.card-left .company {
+  color: hsl(180, 29%, 50%);
+  font-weight: 700;
+}
+
+.card-left {
+  width: 50%;
+}
+
+.company-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 1em;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.job-position {
+  color: hsl(180, 14%, 20%);
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.job-position:hover {
+  color: hsl(180, 29%, 50%);
+}
+
+.job-desc {
+  color: hsl(180, 8%, 52%);
+  font-size: 15px;
+}
+
+.card:first-child,
+.card:nth-child(2) {
+  border-left: 5px solid hsl(180, 29%, 50%);
+}
+
+.card:last-child {
+  border-left: none;
+}
+
+@media screen and (max-width: 900px) {
+  .card {
+    padding-top: 0;
+    margin-bottom: 4em;
+    flex-direction: column;
+  }
+
+  .card:first-child {
+    margin-top: 1em;
+  }
+
+  .card-left {
+    width: 100%;
+    flex-direction: column;
+    border-bottom: 1px solid hsl(180, 8%, 52%);
+  }
+
+  .card-info {
+    transform: translateY(-25%);
+    min-height: 16vh;
+  }
+
+  .logo {
+    width: 64px;
+    height: 64px;
+    transform: translateY(-50%);
+  }
+}
