@@ -9,7 +9,7 @@ const JobCard = ({ job }) => {
   const renderNew = job.new && <New />;
 
   return (
-    <div className="card">
+    <div className={`card ${job.featured ? 'featured-job' : undefined}`}>
       <div className="card-left">
         <img src={`${job.logo}`} className="logo" alt={job.company} />
         <div className="card-info">
